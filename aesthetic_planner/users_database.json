@@ -1,0 +1,53 @@
+{
+    "sonya": {
+        "password": "20a806b267b3a6358f6c25bcf9b48e488cea68e0d43f15e4d6abd918fe49c60d",
+        "data": {
+            "subjects": [],
+            "gym_week": {
+                "Понеділок": {
+                    "type": "Відпочинок 🛋️",
+                    "done": false
+                },
+                "Вівторок": {
+                    "type": "Відпочинок 🛋️",
+                    "done": false
+                },
+                "Середа": {
+                    "type": "Відпочинок 🛋️",
+                    "done": false
+                },
+                "Четвер": {
+                    "type": "Відпочинок 🛋️",
+                    "done": false
+                },
+                "П'ятниця": {
+                    "type": "Відпочинок 🛋️",
+                    "done": false
+                },
+                "Субота": {
+                    "type": "Відпочинок 🛋️",
+                    "done": false
+                },
+                "Неділя": {
+                    "type": "Відпочинок 🛋️",
+                    "done": false
+                }
+            },
+            "water": 0,
+            "mood": "😊 Чудовий",
+            "playlist": "Lofi Girl - chill beats 🎧",
+            "notes": "",
+            "schedule": {},
+            "goals": {},
+            "gratitude": {},
+            "habits": {
+                "Німецька мова 🇩🇪": [],
+                "Догляд за шкірою 🌿": [],
+                "Читання 📖": [],
+                "Спорт/Зарядка ⚡": []
+            },
+            "expenses": [],
+            "books": []
+        }
+    }
+}
