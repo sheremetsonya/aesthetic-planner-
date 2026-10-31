@@ -40,7 +40,7 @@ if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
     st.session_state.username = ""
 
-# Стильні пастельні CSS-шаблони та безпечна мобільна адаптація (без зламу календаря)
+# Стильні пастельні CSS-шаблони та фікс мобільного календаря (тримаємо 7 колонок)
 st.markdown("""
     <style>
     .stApp { background-color: #F8F5F0; }
@@ -57,17 +57,28 @@ st.markdown("""
         h2 { font-size: 1.2rem !important; }
         h3 { font-size: 1.05rem !important; }
         
+        /* Зберігаємо сітку календаря у 7 колонок на мобільних */
+        div[data-testid="stHorizontalBlock"] {
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+        }
+        div[data-testid="column"] {
+            flex: 1 !important;
+            min-width: 0 !important;
+            width: auto !important;
+            padding: 0 1px !important;
+        }
+        
+        /* Компактні кнопки для календаря та інтерфейсу */
         .stButton>button { 
-            width: 100% !important; 
-            margin-top: 0.2rem !important;
-            margin-bottom: 0.2rem !important;
-            padding: 0.5rem !important;
+            padding: 0.2rem 0.1rem !important;
+            font-size: 0.75rem !important;
+            min-height: 32px !important;
         }
         
         .row-widget.stRadio > div {
             flex-direction: column !important;
         }
-        
         div.stRadio > label {
             margin-bottom: 5px !important;
         }
